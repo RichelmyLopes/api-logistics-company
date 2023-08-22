@@ -4,7 +4,7 @@ GET http://localhost:3000/test
 GET http://localhost:3000/routes
 
 ###
-GET http://localhost:3000/routes/1
+GET http://localhost:3000/routes/64e3eaa48cd6895f581a6f4b
 
 ###
 POST http://localhost:3000/routes
@@ -12,6 +12,18 @@ Content-Type: application/json
 
 {
     "name": "route teste 1",
-    "source_id": 1,
-    "destination_id": 1
+    "source_id": "EjlSLiBKw7psaW8gVmluaGEsIDE0NSwgUHJhZMOzcG9saXMgLSBTUCwgMTQ4NTAtMDAwLCBCcmFzaWwiMRIvChQKEglLoVUIHwi5lBHgo7brRUAuxxCRASoUChIJVwPWzR4IuZQRjZHX5cP4lKs",
+    "destination_id": "ChIJ3VeX1vCnuZQRLOH66mNuNqE"
 }
+
+### coisas do mapa
+
+GET http://localhost:3000/places?text=lago do prefeito
+
+
+###
+GET http://localhost:3000/directions?originId=EjlSLiBKw7psaW8gVmluaGEsIDE0NSwgUHJhZMOzcG9saXMgLSBTUCwgMTQ4NTAtMDAwLCBCcmFzaWwiMRIvChQKEglLoVUIHwi5lBHgo7brRUAuxxCRASoUChIJVwPWzR4IuZQRjZHX5cP4lKs&destinationId=ChIJ3VeX1vCnuZQRLOH66mNuNqE
+
+
+###
+GET http://localhost:3000/directions?originId=EjlSLiBKw7psaW8gVmluaGEsIDE0NSwgUHJhZMOzcG9saXMgLSBTUCwgMTQ4NTAtMDAwLCBCcmFzaWwiMRIvChQKEglLoVUIHwi5lBHgo7brRUAuxxCRASoUChIJVwPWzR4IuZQRjZHX5cP4lKs&destinationId=ChIJ3VeX1vCnuZQRLOH66mNuNqE
